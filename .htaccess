@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Tambahkan baris ini untuk menonaktifkan redirect ke localhost/dashboard
+    RewriteCond %{HTTP_HOST} ^localhost$ [NC]
+    RewriteRule ^dashboard($|/) - [L]
+
+    # Atau, jika Anda ingin mengarahkan ke halaman tertentu selain dashboard
+    # RewriteCond %{REQUEST_URI} !^/halaman-lain [NC]
+    # RewriteRule ^(.*)$ /halaman-lain [L,R=301]
+
+    # Atau, jika Anda ingin menonaktifkan semua redirect
+    # RewriteRule ^ - [L]
+
+    # ... aturan mod_rewrite lainnya jika diperlukan
+
+</IfModule>

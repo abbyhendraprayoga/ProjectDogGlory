@@ -1,0 +1,47 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.col-md-4 {
+    flex: 0 0 calc(33.333% - 15px);
+    max-width: calc(33.333% - 15px);
+    margin: 0 7.5px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+
+.card {
+    cursor: pointer;
+    background-color: #343a40;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    max-width: 200px;
+    margin: 3px auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #3d4247;
+}
+
+.card-img-top {
+    border-radius: 0;
+    max-width: 100%;
+    border-radius: 1rem;
+    height: auto;
+
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.text-sm {
+    font-size: 20px;
+    color: #fff;
+}
